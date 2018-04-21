@@ -846,16 +846,16 @@ and 1M data sets. The performance is much more varied in  the 10M data set, with
 
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{fintime-pandas-benchmark-ex-q0.pdf}
-\includegraphics[width=\columnwidth]{fintime-pandas-benchmark-q0.pdf}
-\includegraphics[width=\columnwidth]{fintime-pandas-benchmark.pdf}
+%\includegraphics[width=\columnwidth]{fintime-pandas-benchmark-ex-q0.pdf}
+%\includegraphics[width=\columnwidth]{fintime-pandas-benchmark-q0.pdf}
+%\includegraphics[width=\columnwidth]{fintime-pandas-benchmark.pdf}
 \caption{Pandas Comparison on Sybase IQ Financial Benchmark: AQuery is faster with stock history of
 100K, 1M and 10M rows across all queries. In various of these, AQuery's average response time is orders of magnitude shorter.The first set of graphs excludes query 0, for ease of reading, given the vastly different response time. The second set shows query 0 separately. And the third shows all queries combined.}
 \label{fintime-pandas-benchmark}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{fintime-monetdb-benchmark.pdf}
+%\includegraphics[width=\columnwidth]{fintime-monetdb-benchmark.pdf}
 \caption{MonetDB Comparison on Sybase IQ Financial Benchmark: AQuery is faster across the board
 for 100K rows of stock history. When we increment to 1M AQuery remains faster in 8 of 10 queries, and comparable
 in the remaining 2. At 10M rows, AQuery is slightly slower for query 2, comparable for query 7, and faster in all others.}
@@ -863,7 +863,7 @@ in the remaining 2. At 10M rows, AQuery is slightly slower for query 2, comparab
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{fintime-sybase-benchmark.pdf}
+%\includegraphics[width=\columnwidth]{fintime-sybase-benchmark.pdf}
 \caption{Sybase IQ Comparison on Sybase IQ Financial Benchmark: With 100K and 1M rows, AQuery
 outperforms Sybase IQ in all of the queries evaluated. At 10M rows, performance is a bit more varied, with
 larger standard errors, but on average AQuery is faster in 8 of the 10 benchmark queries.}
@@ -883,9 +883,9 @@ We note that AQuery outperforms in 5 of 7 queries in most of the data sets we ev
 
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{pandas-benchmark-ex-q3.pdf}
-\includegraphics[width=\columnwidth]{pandas-benchmark-q3.pdf}
-\includegraphics[width=\columnwidth]{pandas-benchmark.pdf}
+%\includegraphics[width=\columnwidth]{pandas-benchmark-ex-q3.pdf}
+%\includegraphics[width=\columnwidth]{pandas-benchmark-q3.pdf}
+%\includegraphics[width=\columnwidth]{pandas-benchmark.pdf}
 \caption{Pandas Benchmarking Operations: For 100K rows, AQuery is on average faster in 6 of 7 cases. For 1M and 3M rows, AQuery is faster in 5 of the 7 operations evaluated. The first set of graphs excludes query 3, 
 for ease of reading, given the vastly different response time. The second set shows query 3 separately. And the third shows all queries combined.}
 \label{pandas-benchmark}
@@ -932,7 +932,7 @@ calculation over 5 iterations. These response times are then averaged and approp
 In all cases, AQuery outperforms the equivalent calculation in MonetDB + embedded Python/Numpy, with the gap in performance narrowing in larger data sets.  However, we remind the reader that the AQuery implementation uses a naive quantile function which sorts the data completely.
 
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{monetdb-benchmark.pdf}
+%\includegraphics[width=\columnwidth]{monetdb-benchmark.pdf}
 \caption{MonetDB Quantile Benchmarking: AQuery outperforms in all the dataset sizes evaluated.
 While the advantage narrows with larger data, we highlight AQuery's implementation is currently
 using a naive quantile calculation that involves sorting the entire array.}
